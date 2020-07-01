@@ -73,7 +73,7 @@ npm start
 
 This will assemble the templates, static assets, Sass, and JavaScript. You can view the test server at this URL:
 
-`http://localhost:8080`
+`http://localhost:8082`
 
 ### Run tests
 

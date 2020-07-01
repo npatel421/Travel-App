@@ -1,0 +1,93 @@
+body{
+    background: #89CFF0;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+#app {
+    display: flex ;
+    flex-direction: column ;
+    flex-wrap: wrap ;
+    justify-content: space-between ;
+    align-items: flex-start ;
+    align-content: center ;
+}
+
+#upcoming_trip {
+    display: flex ;
+    flex-direction: column ;
+    flex-wrap: wrap ;
+    justify-content: space-between ;
+    align-items: flex-start ;
+    align-content: center ;
+}
+
+img {
+    width: 500px;
+    height: auto;
+}
+
+.holder_headline {
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 35px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: 400;
+    text-decoration: none solid rgb(68, 68, 68);
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+
+@media(max-width:415px) {
+
+    img {
+        width: 315px;
+        height: auto;
+    }
+    #app {
+        display: flex ;
+        flex-direction: column ;
+        flex-wrap: wrap ;
+        justify-content: space-between ;
+        align-items: flex-start ;
+        align-content: center ;
+    }
+    #upcoming_trip {
+        display: flex ;
+        flex-direction: column ;
+        flex-wrap: wrap ;
+        justify-content: space-between ;
+        align-items: flex-start ;
+        align-content: center ;
+    }
+}
+
+@media(min-width:416px) and (max-width:1025px) {
+
+    img {
+        width: 500px;
+        height: auto;
+    }
+    #app {
+        display: flex ;
+        flex-direction: column ;
+        flex-wrap: wrap ;
+        justify-content: space-between ;
+        align-items: flex-start ;
+        align-content: center ;
+    }
+    #upcoming_trip {
+        display: flex ;
+        flex-direction: column ;
+        flex-wrap: wrap ;
+        justify-content: space-between ;
+        align-items: flex-start;
+        align-content: center ;
+    }
+}

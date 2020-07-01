@@ -2,10 +2,10 @@ const app = require('../server/server');
 const supertest = require('supertest');
 const request = supertest(app);
 
-describe('get endpoints correct', () => {
-    it ('return html file', async done => {
-        const res =  await request.get('/')
-        expect(res.status).toBe(200);
+describe('test server', () => {
+    it ('return body message from test url', async done => {
+        const res =  await request.get('/test')
+        expect(res.body.message).toBe('pass!');
         done();
     })
 })

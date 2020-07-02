@@ -1,5 +1,6 @@
 let UIData = {}
 
+// deleteTrip function is the add on for the project. It will delete the div elements created when the UI is updated if the user decides to delete the trip.
 const deleteTrip = async (event) => {
   event.preventDefault();
   console.log('deleting trip')
@@ -9,6 +10,7 @@ const deleteTrip = async (event) => {
 }
 }
 
+// formHandler, initializes variables and includes the user input
 const formHandler = async (event) => {
 
   event.preventDefault();
@@ -33,6 +35,7 @@ const formHandler = async (event) => {
   }
 }
 
+// getTripInfo, main function that sends user input back to the express server and then returns the trip information to the client side
 const getTripInfo = async (url, data) => {
   console.log('inside trip info')
   const request = await fetch(url, {
@@ -54,8 +57,8 @@ const getTripInfo = async (url, data) => {
   }
 };
 
+// localUI function creates divs based on the information needed to display to the user and then updates UI based on API trip info
 function localUI (data) {
-  console.log('updating UI')
 
   const parentElement = document.getElementById('upcoming_trip');
 
@@ -91,7 +94,6 @@ function localUI (data) {
   parentElement.appendChild(divCreateWeather)
   parentElement.appendChild(imgCreate)
   parentElement.appendChild(divCreateDelBut)
-  console.log('done updating')
 }
 
 export { formHandler, deleteTrip, getTripInfo }
